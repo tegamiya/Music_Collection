@@ -1,0 +1,1336 @@
+/* type1  JAZZバンド　*/
+.type1 dl {
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, transform 0.6s;
+}
+.type1:hover dl {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+
+/* type2 JAZZバンド */
+.type2 {
+	overflow: visible;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	backface-visibility: hidden;
+}
+.type2 img,
+.type2 dl {
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, transform 0.6s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.type2:hover img {
+	-webkit-transform: rotateX(180deg) ;
+	transform: rotateX(180deg);
+}
+
+.type2 dl {
+	opacity: 1;
+	background: #000000;
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	backface-visibility: hidden;
+}
+
+.type2:hover dl {
+	-webkit-transform: rotateX(0);
+	transform: rotateX(0);
+}
+
+.type2 dd{
+	opacity: 0;
+	padding-bottom: 5px;
+}
+.type2:hover dd{
+	opacity: 1;
+	padding-bottom: 5px;
+}
+
+/* type3 JAZZバンド*/
+.type3{
+	overflow: hidden;
+	/* ↓　overflow:hidden の指定によってインラインブロックがベースラインに動かされるのを防ぐ */
+	vertical-align: top;
+}
+
+.type3 dl {
+	background-color: transparent;
+}
+.type3 dl dt,
+.type3 dl dd {
+	position: relative;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.type3:hover dl dt,
+.type3:hover dl dd {
+	opacity: 1;
+	transition-delay: 0.3s;
+}
+.type3 dl::before,
+.type3 dl::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 500px;
+	height: 300px;
+	background: #000000;
+	opacity: 0;
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, transform 0.6s;
+}
+.type3:hover dl::before,
+.type3:hover dl::after {
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+.type3 dl::before {
+	-webkit-transform: translateX(-500px) skew(-30deg);
+	transform: translateX(-500px) skew(-30deg);
+}
+.type3 dl::after {
+	-webkit-transform: translateX(275px) skew(-30deg);
+	transform: translateX(275px) skew(-30deg);
+}
+.type3:hover dl::before {
+	-webkit-transform: translateX(0) skew(0);
+	transform: translateX(0) skew(0);
+}
+.type3:hover dl::after {
+	-webkit-transform: translateX(500px) skew(0);
+	transform: translateX(500px) skew(0);
+}
+
+
+
+/* ボタンデザイン*/
+a.cp_btn {
+	position: relative;
+	display: block;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border: 3px solid #0000DD;
+	text-decoration: none;
+	outline: none;
+	transition: all .4s;
+}
+a.cp_btn::before,
+a.cp_btn::after {
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	bottom: -3px;
+	left: -3px;
+	z-index: 2;
+	content: '';
+	transition: all .4s;
+}
+a.cp_btn::before {
+	border-top: 3px solid #FF5722;
+	border-bottom: 3px solid #FF5722;
+	transform: scale(0, 1);
+}
+a.cp_btn::after {
+	border-right: 3px solid #FF5722;
+	border-left: 3px solid #FF5722;
+	transform: scale(1, 0);
+}
+a.cp_btn:hover {
+	color: #FF5722;
+}
+a.cp_btn:hover::after,
+a.cp_btn:hover::before {
+	transform: scale(1);
+}
+
+/* btn2*/
+
+a.cp_btn1 {
+	display: block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border:1px solid #008BBB;
+	background: #008BBB;
+	overflow: hidden;
+	z-index: 1 !important;
+}
+a.cp_btn1:after {
+	content:"";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 0;
+	width: 100%;
+	background : #fff;
+	opacity: 0;
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transition: 0.3s;
+	z-index: -1;
+}
+a.cp_btn1:hover {
+	color: #da3c41;
+}
+a.cp_btn1:hover:after {
+	height: 250%;
+	opacity: 1;
+}
+a.cp_btn1:active:after {
+	height: 350%;
+	opacity: 1;
+}
+
+
+/* btn3*/
+
+a.cp_btn2 {
+	position: relative;
+	display: block;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background: #2196F3;
+	border:solid 1px #fff;
+	overflow: hidden;
+}
+a.cp_btn2:before {
+	content:"";
+	position: absolute;
+	top: -25px;
+	left: -20px;
+	height:90px;
+	width:20px;
+	background : #fff;
+	opacity: 0.3;
+	transform: rotate(40deg);
+	transition: 0.3s;
+}
+a.cp_btn2:hover:before {
+	left:98%;
+}
+
+#btn1{
+    top:98px;
+    margin-left: 72%;
+}
+
+#btn2{
+    top:42px;
+    margin-left: 45%;
+}
+
+#btn3{
+    top:-7px;
+    margin-left: 20%;
+}
+
+#try4th h5{
+    margin-top: -20px;
+    margin-left: -70px;
+}
+
+/* 調整用*/
+#boxxxx{
+    margin-top: 0px;
+}
+
+#tyouseiB{
+    height: 10px;
+    width: 420px;
+    margin-left: 38%;
+    margin-top: -300px;
+}
+
+#tyouseiB h2{
+    border-bottom: solid 3px skyblue;
+    position: relative;
+    text-align:center;
+}
+
+#tyouseiB h2:after {
+	position: absolute;
+	content: " ";
+	display: block;
+	border-bottom: solid 3px #ffc778;
+	bottom: -3px;
+	width: 30%;
+}
+
+
+/*  スライドショー*/
+/* -----美咲------- */
+.cr-container{
+    left: -15%;
+	width: 600px;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+	border: 20px solid #fff;
+	box-shadow: 3px 3px 9px rgba(0,0,0,0.1);
+}
+.cr-container label{
+	font-style: italic;
+	width: 150px;
+	height: 30px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 32px;
+	font-size: 24px;
+	float:left;
+	position: relative;
+	margin-top:350px;
+	z-index: 1000;
+}
+.cr-container label:before{
+	content:'';
+	width: 34px;
+	height: 34px;
+	background: rgba(130,195,217,0.9);
+	position: absolute;
+	left: 50%;
+	margin-left: -17px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 4px rgba(255,255,255,0.3);
+	z-index:-1;
+}
+.cr-container label:after{
+/*    ↓　width: 1px;　で線が入る*/
+	width: 0px;
+	height: 400px;
+	content: '';
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	position: absolute;
+	bottom: -20px;
+	right: 0px;
+}
+.cr-container label.cr-label-img-4:after{
+	width: 0px;
+}
+.cr-container input.cr-selector-img-1:checked ~ label.cr-label-img-1,
+.cr-container input.cr-selector-img-2:checked ~ label.cr-label-img-2,
+.cr-container input.cr-selector-img-3:checked ~ label.cr-label-img-3,
+.cr-container input.cr-selector-img-4:checked ~ label.cr-label-img-4{
+	color: #68abc2;
+}
+.cr-container input.cr-selector-img-1:checked ~ label.cr-label-img-1:before,
+.cr-container input.cr-selector-img-2:checked ~ label.cr-label-img-2:before,
+.cr-container input.cr-selector-img-3:checked ~ label.cr-label-img-3:before,
+.cr-container input.cr-selector-img-4:checked ~ label.cr-label-img-4:before{
+	background: #fff;
+	box-shadow: 0px 0px 0px 4px rgba(104,171,194,0.6);
+}
+.cr-container input{
+	display: none;
+        	width: 600px;
+	height: 400px;
+}
+.cr-bgimg{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+.cr-bgimg{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.cr-bgimg div{
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.cr-bgimg div span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 400px;
+	left: 0px;
+	z-index: 2;
+	text-indent: -9000px;
+}
+.cr-bgimg div:nth-child(even) span{
+	top: -400px;
+}
+.cr-container input.cr-selector-img-1:checked ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(1){
+	background-image: url(../img/HKT/misaki6.jpg);
+    background-size:600px 400px;
+}
+
+.cr-container input.cr-selector-img-2:checked ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(2){
+	background-image: url(../img/HKT/misaki2.jpg);
+    background-size:600px 400px;
+}
+.cr-container input.cr-selector-img-3:checked ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(3){
+	background-image: url(../img/HKT/misaki3.jpg);
+    background-size:600px 400px;
+}
+.cr-container input.cr-selector-img-4:checked ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(4){
+	background-image: url(../img/HKT/misaki1.jpg);
+    background-size:600px 450px;
+}
+.cr-bgimg div:nth-child(1) span{
+	background-position: 0px 0px;
+}
+.cr-bgimg div:nth-child(2) span{
+	background-position: -150px 0px;
+}
+.cr-bgimg div:nth-child(3) span{
+	background-position: -300px 0px;
+}
+.cr-bgimg div:nth-child(4) span{
+	background-position: -450px 0px;
+}
+
+.cr-container input:checked ~ .cr-bgimg div span{
+	-webkit-animation: slideOutUp 0.6s ease-in-out;
+	-moz-animation: slideOutUp 0.6s ease-in-out;
+	-o-animation: slideOutUp 0.6s ease-in-out;
+	-ms-animation: slideOutUp 0.6s ease-in-out;
+	animation: slideOutUp 0.6s ease-in-out;
+}
+.cr-container input:checked ~ .cr-bgimg div:nth-child(even) span{
+	-webkit-animation: slideOutDown 0.6s ease-in-out;
+	-moz-animation: slideOutDown 0.6s ease-in-out;
+	-o-animation: slideOutDown 0.6s ease-in-out;
+	-ms-animation: slideOutDown 0.6s ease-in-out;
+	animation: slideOutDown 0.6s ease-in-out;
+}
+@-webkit-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-webkit-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-moz-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-moz-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-o-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-o-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-ms-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-ms-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+.cr-container input.cr-selector-img-1:checked ~ .cr-bgimg div span:nth-child(1),
+.cr-container input.cr-selector-img-2:checked ~ .cr-bgimg div span:nth-child(2),
+.cr-container input.cr-selector-img-3:checked ~ .cr-bgimg div span:nth-child(3),
+.cr-container input.cr-selector-img-4:checked ~ .cr-bgimg div span:nth-child(4){
+	-webkit-transition: top 0.5s ease-in-out;
+	-moz-transition: top 0.5s ease-in-out;
+	-o-transition: top 0.5s ease-in-out;
+	-ms-transition: top 0.5s ease-in-out;
+	transition: top 0.5s ease-in-out;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+	top: 0px;
+	z-index: 10;
+}
+
+
+.cr-titles h3{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.cr-titles h3 span{
+	z-index: 10000;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	opacity: 0;
+}
+.cr-titles h3 span:nth-child(1){
+	top: 15%;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 70px;
+	letter-spacing: 7px;
+	-webkit-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+}
+.cr-titles h3 span:nth-child(1){
+	top: 50%;
+	margin-top: 84px;
+	letter-spacing: 0px;
+	background: rgba(104,171,194,0.9);
+	font-size: 14px;
+	padding: 10px 0px;
+	font-style: italic;
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out;
+}
+
+
+.cr-container input.cr-selector-img-1:checked ~ .cr-titles h3:nth-child(1) span:nth-child(1),
+.cr-container input.cr-selector-img-2:checked ~ .cr-titles h3:nth-child(2) span:nth-child(1),
+.cr-container input.cr-selector-img-3:checked ~ .cr-titles h3:nth-child(3) span:nth-child(1),
+.cr-container input.cr-selector-img-4:checked ~ .cr-titles h3:nth-child(4) span:nth-child(1){
+	opacity: 1;
+	top: 50%;
+}
+.cr-container input.cr-selector-img-1:checked ~ .cr-titles h3:nth-child(1) span:nth-child(2),
+.cr-container input.cr-selector-img-2:checked ~ .cr-titles h3:nth-child(2) span:nth-child(2),
+.cr-container input.cr-selector-img-3:checked ~ .cr-titles h3:nth-child(3) span:nth-child(2),
+.cr-container input.cr-selector-img-4:checked ~ .cr-titles h3:nth-child(4) span:nth-child(2){
+	opacity: 1;
+}
+/* Media Query: Let's show the inputs on mobile sized browsers because they probably don't support the label trick: */
+@media screen and (max-width: 768px) {
+	.cr-container input{
+		display: inline;
+		width: 24%;
+		margin-top: 350px;
+		z-index: 1000;
+		position: relative;
+	}
+	.cr-container label{
+		display: none;
+	}
+}
+
+
+label{
+    font-family: Cambria;
+}
+
+
+
+
+
+
+/*  スライドショー*/
+/* -----紗英------- */
+.sae-container{
+    left: -15%;
+	width: 600px;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+	border: 20px solid #fff;
+	box-shadow: 3px 3px 9px rgba(0,0,0,0.1);
+    z-index: 103;
+}
+.sae-container label{
+	font-style: italic;
+	width: 150px;
+	height: 30px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 32px;
+	font-size: 24px;
+	float:left;
+	position: relative;
+	margin-top:350px;
+	z-index: 1000;
+}
+.sae-container label:before{
+	content:'';
+	width: 34px;
+	height: 34px;
+	background: rgba(130,195,217,0.9);
+	position: absolute;
+	left: 50%;
+	margin-left: -17px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 4px rgba(255,255,255,0.3);
+	z-index:-1;
+}
+.sae-container label:after{
+	width: 0px;
+	height: 400px;
+	content: '';
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	position: absolute;
+	bottom: -20px;
+	right: 0px;
+}
+.sae-container label.saelabel-img-4:after{
+	width: 0px;
+}
+.sae-container input.sae-selector-img-1:checked ~ label.saelabel-img-1,
+.sae-container input.sae-selector-img-2:checked ~ label.saelabel-img-2,
+.sae-container input.sae-selector-img-3:checked ~ label.saelabel-img-3,
+.sae-container input.sae-selector-img-4:checked ~ label.saelabel-img-4{
+	color: #68abc2;
+}
+.sae-container input.sae-selector-img-1:checked ~ label.saelabel-img-1:before,
+.sae-container input.sae-selector-img-2:checked ~ label.saelabel-img-2:before,
+.sae-container input.sae-selector-img-3:checked ~ label.saelabel-img-3:before,
+.sae-container input.sae-selector-img-4:checked ~ label.saelabel-img-4:before{
+	background: #fff;
+	box-shadow: 0px 0px 0px 4px rgba(104,171,194,0.6);
+}
+.sae-container input{
+	display: none;
+        	width: 600px;
+	height: 400px;
+}
+.sae-bgimg{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+.sae-bgimg{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.sae-bgimg div{
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.sae-bgimg div span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 400px;
+	left: 0px;
+	z-index: 2;
+	text-indent: -9000px;
+}
+.sae-bgimg div:nth-child(even) span{
+	top: -400px;
+}
+.sae-container input.sae-selector-img-1:checked ~ .sae-bgimg,
+.sae-bgimg div span:nth-child(1){
+	background-image: url(../img/HKT/sae1.jpg);
+    background-size:600px 450px;
+}
+
+.sae-container input.sae-selector-img-2:checked ~ .sae-bgimg,
+.sae-bgimg div span:nth-child(2){
+	background-image: url(../img/HKT/sae6.jpg);
+    background-size:600px 450px;
+}
+.sae-container input.sae-selector-img-3:checked ~ .sae-bgimg,
+.sae-bgimg div span:nth-child(3){
+	background-image: url(../img/HKT/sae5.jpg);
+    background-size:600px 420px;
+}
+.sae-container input.sae-selector-img-4:checked ~ .sae-bgimg,
+.sae-bgimg div span:nth-child(4){
+	background-image: url(../img/HKT/sae3.jpg);
+    background-size:600px 400px;
+}
+.sae-bgimg div:nth-child(1) span{
+	background-position: 0px 0px;
+}
+.sae-bgimg div:nth-child(2) span{
+	background-position: -150px 0px;
+}
+.sae-bgimg div:nth-child(3) span{
+	background-position: -300px 0px;
+}
+.sae-bgimg div:nth-child(4) span{
+	background-position: -450px 0px;
+}
+
+.sae-container input:checked ~ .sae-bgimg div span{
+	-webkit-animation: slideOutUp 0.6s ease-in-out;
+	-moz-animation: slideOutUp 0.6s ease-in-out;
+	-o-animation: slideOutUp 0.6s ease-in-out;
+	-ms-animation: slideOutUp 0.6s ease-in-out;
+	animation: slideOutUp 0.6s ease-in-out;
+}
+.sae-container input:checked ~ .sae-bgimg div:nth-child(even) span{
+	-webkit-animation: slideOutDown 0.6s ease-in-out;
+	-moz-animation: slideOutDown 0.6s ease-in-out;
+	-o-animation: slideOutDown 0.6s ease-in-out;
+	-ms-animation: slideOutDown 0.6s ease-in-out;
+	animation: slideOutDown 0.6s ease-in-out;
+}
+
+.sae-container input.sae-selector-img-1:checked ~ .sae-bgimg div span:nth-child(1),
+.sae-container input.sae-selector-img-2:checked ~ .sae-bgimg div span:nth-child(2),
+.sae-container input.sae-selector-img-3:checked ~ .sae-bgimg div span:nth-child(3),
+.sae-container input.sae-selector-img-4:checked ~ .sae-bgimg div span:nth-child(4){
+	-webkit-transition: top 0.5s ease-in-out;
+	-moz-transition: top 0.5s ease-in-out;
+	-o-transition: top 0.5s ease-in-out;
+	-ms-transition: top 0.5s ease-in-out;
+	transition: top 0.5s ease-in-out;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+	top: 0px;
+	z-index: 101;
+}
+
+.saetitles h3{
+	color: #fff;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+.saetitles h3 span{
+	z-index: 10000;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	opacity: 0;
+}
+
+.saetitles h3 span:nth-child(1){
+	top: 50%;
+	margin-top: 84px;
+	letter-spacing: 0px;
+	background: rgba(104,171,194,0.9);
+	font-size: 14px;
+	padding: 10px 0px;
+	font-style: italic;
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out;
+}
+.sae-container input.sae-selector-img-1:checked ~ .saetitles h3:nth-child(1) span:nth-child(1),
+.sae-container input.sae-selector-img-2:checked ~ .saetitles h3:nth-child(2) span:nth-child(1),
+.sae-container input.sae-selector-img-3:checked ~ .saetitles h3:nth-child(3) span:nth-child(1),
+.sae-container input.sae-selector-img-4:checked ~ .saetitles h3:nth-child(4) span:nth-child(1){
+	opacity: 1;
+	top: 50%;
+}
+.sae-container input.sae-selector-img-1:checked ~ .saetitles h3:nth-child(1) span:nth-child(2),
+.sae-container input.sae-selector-img-2:checked ~ .saetitles h3:nth-child(2) span:nth-child(2),
+.sae-container input.sae-selector-img-3:checked ~ .saetitles h3:nth-child(3) span:nth-child(2),
+.sae-container input.sae-selector-img-4:checked ~ .saetitles h3:nth-child(4) span:nth-child(2){
+	opacity: 1;
+}
+
+
+/*  スライドショー*/
+/*-------奈子--------*/
+
+.nako-container{
+    left: -15%;
+	width: 600px;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+	border: 20px solid #fff;
+	box-shadow: 3px 3px 9px rgba(0,0,0,0.1);
+}
+.nako-container label{
+	font-style: italic;
+	width: 150px;
+	height: 30px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 32px;
+	font-size: 24px;
+	float:left;
+	position: relative;
+	margin-top:350px;
+	z-index: 1000;
+}
+.nako-container label:before{
+	content:'';
+	width: 34px;
+	height: 34px;
+	background: rgba(130,195,217,0.9);
+	position: absolute;
+	left: 50%;
+	margin-left: -17px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 4px rgba(255,255,255,0.3);
+	z-index:-1;
+}
+.nako-container label:after{
+	width: 0px;
+	height: 400px;
+	content: '';
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	position: absolute;
+	bottom: -20px;
+	right: 0px;
+}
+.nako-container label.nako-label-img-4:after{
+	width: 0px;
+}
+.nako-container input.nako-selector-img-1:checked ~ label.nako-label-img-1,
+.nako-container input.nako-selector-img-2:checked ~ label.nako-label-img-2,
+.nako-container input.nako-selector-img-3:checked ~ label.nako-label-img-3,
+.nako-container input.nako-selector-img-4:checked ~ label.nako-label-img-4{
+	color: #68abc2;
+}
+.nako-container input.nako-selector-img-1:checked ~ label.nako-label-img-1:before,
+.nako-container input.nako-selector-img-2:checked ~ label.nako-label-img-2:before,
+.nako-container input.nako-selector-img-3:checked ~ label.nako-label-img-3:before,
+.nako-container input.nako-selector-img-4:checked ~ label.nako-label-img-4:before{
+	background: #fff;
+	box-shadow: 0px 0px 0px 4px rgba(104,171,194,0.6);
+}
+.nako-container input{
+	display: none;
+        	width: 600px;
+	height: 400px;
+}
+.nako-bgimg{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+.nako-bgimg{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.nako-bgimg div{
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.nako-bgimg div span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 400px;
+	left: 0px;
+	z-index: 2;
+	text-indent: -9000px;
+}
+.nako-bgimg div:nth-child(even) span{
+	top: -400px;
+}
+.nako-container input.nako-selector-img-1:checked ~ .nako-bgimg,
+.nako-bgimg div span:nth-child(1){
+	background-image: url(../img/HKT/nako3.jpg);
+    background-size:600px 450px;
+}
+
+.nako-container input.nako-selector-img-2:checked ~ .nako-bgimg,
+.nako-bgimg div span:nth-child(2){
+	background-image: url(../img/HKT/nako2.jpg);
+    background-size:600px 450px;
+}
+.nako-container input.nako-selector-img-3:checked ~ .nako-bgimg,
+.nako-bgimg div span:nth-child(3){
+	background-image: url(../img/HKT/nako1.jpg);
+    background-size:600px 450px;
+}
+.nako-container input.nako-selector-img-4:checked ~ .nako-bgimg,
+.nako-bgimg div span:nth-child(4){
+	background-image: url(../img/HKT/nako4.jpg);
+    background-size:600px 450px;
+}
+.nako-bgimg div:nth-child(1) span{
+	background-position: 0px 0px;
+}
+.nako-bgimg div:nth-child(2) span{
+	background-position: -150px 0px;
+}
+.nako-bgimg div:nth-child(3) span{
+	background-position: -300px 0px;
+}
+.nako-bgimg div:nth-child(4) span{
+	background-position: -450px 0px;
+}
+
+.nako-container input:checked ~ .nako-bgimg div span{
+	-webkit-animation: slideOutUp 0.6s ease-in-out;
+	-moz-animation: slideOutUp 0.6s ease-in-out;
+	-o-animation: slideOutUp 0.6s ease-in-out;
+	-ms-animation: slideOutUp 0.6s ease-in-out;
+	animation: slideOutUp 0.6s ease-in-out;
+}
+.nako-container input:checked ~ .nako-bgimg div:nth-child(even) span{
+	-webkit-animation: slideOutDown 0.6s ease-in-out;
+	-moz-animation: slideOutDown 0.6s ease-in-out;
+	-o-animation: slideOutDown 0.6s ease-in-out;
+	-ms-animation: slideOutDown 0.6s ease-in-out;
+	animation: slideOutDown 0.6s ease-in-out;
+}
+@-webkit-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-webkit-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-moz-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-moz-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-o-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-o-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-ms-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-ms-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+.nako-container input.nako-selector-img-1:checked ~ .nako-bgimg div span:nth-child(1),
+.nako-container input.nako-selector-img-2:checked ~ .nako-bgimg div span:nth-child(2),
+.nako-container input.nako-selector-img-3:checked ~ .nako-bgimg div span:nth-child(3),
+.nako-container input.nako-selector-img-4:checked ~ .nako-bgimg div span:nth-child(4){
+	-webkit-transition: top 0.5s ease-in-out;
+	-moz-transition: top 0.5s ease-in-out;
+	-o-transition: top 0.5s ease-in-out;
+	-ms-transition: top 0.5s ease-in-out;
+	transition: top 0.5s ease-in-out;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+	top: 0px;
+	z-index: 10;
+}
+
+
+.nako-titles h3{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.nako-titles h3 span{
+	z-index: 10000;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	opacity: 0;
+}
+.nako-titles h3 span:nth-child(1){
+	top: 15%;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 70px;
+	letter-spacing: 7px;
+	-webkit-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+}
+.nako-titles h3 span:nth-child(1){
+	top: 50%;
+	margin-top: 84px;
+	letter-spacing: 0px;
+	background: rgba(104,171,194,0.9);
+	font-size: 14px;
+	padding: 10px 0px;
+	font-style: italic;
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out;
+}
+
+
+.nako-container input.nako-selector-img-1:checked ~ .nako-titles h3:nth-child(1) span:nth-child(1),
+.nako-container input.nako-selector-img-2:checked ~ .nako-titles h3:nth-child(2) span:nth-child(1),
+.nako-container input.nako-selector-img-3:checked ~ .nako-titles h3:nth-child(3) span:nth-child(1),
+.nako-container input.nako-selector-img-4:checked ~ .nako-titles h3:nth-child(4) span:nth-child(1){
+	opacity: 1;
+	top: 50%;
+}
+.nako-container input.nako-selector-img-1:checked ~ .nako-titles h3:nth-child(1) span:nth-child(2),
+.nako-container input.nako-selector-img-2:checked ~ .nako-titles h3:nth-child(2) span:nth-child(2),
+.nako-container input.nako-selector-img-3:checked ~ .nako-titles h3:nth-child(3) span:nth-child(2),
+.nako-container input.nako-selector-img-4:checked ~ .nako-titles h3:nth-child(4) span:nth-child(2){
+	opacity: 1;
+}
+/* Media Query: Let's show the inputs on mobile sized browsers because they probably don't support the label trick: */
+@media screen and (max-width: 768px) {
+	.nako-container input{
+		display: inline;
+		width: 24%;
+		margin-top: 350px;
+		z-index: 1000;
+		position: relative;
+	}
+	.nako-container label{
+		display: none;
+	}
+}
+
+
+/*   咲良*/
+.sakura-container{
+    left: -15%;
+	width: 600px;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+	border: 20px solid #fff;
+	box-shadow: 3px 3px 9px rgba(0,0,0,0.1);
+}
+.sakura-container label{
+	font-style: italic;
+	width: 150px;
+	height: 30px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 32px;
+	font-size: 24px;
+	float:left;
+	position: relative;
+	margin-top:350px;
+	z-index: 1000;
+}
+.sakura-container label:before{
+	content:'';
+	width: 34px;
+	height: 34px;
+	background: rgba(130,195,217,0.9);
+	position: absolute;
+	left: 50%;
+	margin-left: -17px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 4px rgba(255,255,255,0.3);
+	z-index:-1;
+}
+.sakura-container label:after{
+/*    ↓　width: 1px;　で線が入る*/
+	width: 0px;
+	height: 400px;
+	content: '';
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	position: absolute;
+	bottom: -20px;
+	right: 0px;
+}
+.sakura-container label.sakura-label-img-4:after{
+	width: 0px;
+}
+.sakura-container input.sakura-selector-img-1:checked ~ label.sakura-label-img-1,
+.sakura-container input.sakura-selector-img-2:checked ~ label.sakura-label-img-2,
+.sakura-container input.sakura-selector-img-3:checked ~ label.sakura-label-img-3,
+.sakura-container input.sakura-selector-img-4:checked ~ label.sakura-label-img-4{
+	color: #68abc2;
+}
+.sakura-container input.sakura-selector-img-1:checked ~ label.sakura-label-img-1:before,
+.sakura-container input.sakura-selector-img-2:checked ~ label.sakura-label-img-2:before,
+.sakura-container input.sakura-selector-img-3:checked ~ label.sakura-label-img-3:before,
+.sakura-container input.sakura-selector-img-4:checked ~ label.sakura-label-img-4:before{
+	background: #fff;
+	box-shadow: 0px 0px 0px 4px rgba(104,171,194,0.6);
+}
+.sakura-container input{
+	display: none;
+        	width: 600px;
+	height: 400px;
+}
+.sakura-bgimg{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+.sakura-bgimg{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.sakura-bgimg div{
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.sakura-bgimg div span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 400px;
+	left: 0px;
+	z-index: 2;
+	text-indent: -9000px;
+}
+.sakura-bgimg div:nth-child(even) span{
+	top: -400px;
+}
+.sakura-container input.sakura-selector-img-1:checked ~ .sakura-bgimg,
+.sakura-bgimg div span:nth-child(1){
+	background-image: url(../img/HKT/sakura1.jpg);
+    background-size:700px 450px;
+}
+
+.sakura-container input.sakura-selector-img-2:checked ~ .sakura-bgimg,
+.sakura-bgimg div span:nth-child(2){
+	background-image: url(../img/HKT/sakura2.jpg);
+    background-size:600px 450px;
+}
+.sakura-container input.sakura-selector-img-3:checked ~ .sakura-bgimg,
+.sakura-bgimg div span:nth-child(3){
+	background-image: url(../img/HKT/sakura3.jpg);
+    background-size:600px 400px;
+}
+.sakura-container input.sakura-selector-img-4:checked ~ .sakura-bgimg,
+.sakura-bgimg div span:nth-child(4){
+	background-image: url(../img/HKT/sakura4.jpg);
+    background-size:600px 450px;
+}
+.sakura-bgimg div:nth-child(1) span{
+	background-position: 0px 0px;
+}
+.sakura-bgimg div:nth-child(2) span{
+	background-position: -150px 0px;
+}
+.sakura-bgimg div:nth-child(3) span{
+	background-position: -300px 0px;
+}
+.sakura-bgimg div:nth-child(4) span{
+	background-position: -450px 0px;
+}
+
+.sakura-container input:checked ~ .sakura-bgimg div span{
+	-webkit-animation: slideOutUp 0.6s ease-in-out;
+	-moz-animation: slideOutUp 0.6s ease-in-out;
+	-o-animation: slideOutUp 0.6s ease-in-out;
+	-ms-animation: slideOutUp 0.6s ease-in-out;
+	animation: slideOutUp 0.6s ease-in-out;
+}
+.sakura-container input:checked ~ .sakura-bgimg div:nth-child(even) span{
+	-webkit-animation: slideOutDown 0.6s ease-in-out;
+	-moz-animation: slideOutDown 0.6s ease-in-out;
+	-o-animation: slideOutDown 0.6s ease-in-out;
+	-ms-animation: slideOutDown 0.6s ease-in-out;
+	animation: slideOutDown 0.6s ease-in-out;
+}
+@-webkit-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-webkit-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-moz-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-moz-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-o-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-o-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-ms-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-ms-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+.sakura-container input.sakura-selector-img-1:checked ~ .sakura-bgimg div span:nth-child(1),
+.sakura-container input.sakura-selector-img-2:checked ~ .sakura-bgimg div span:nth-child(2),
+.sakura-container input.sakura-selector-img-3:checked ~ .sakura-bgimg div span:nth-child(3),
+.sakura-container input.sakura-selector-img-4:checked ~ .sakura-bgimg div span:nth-child(4){
+	-webkit-transition: top 0.5s ease-in-out;
+	-moz-transition: top 0.5s ease-in-out;
+	-o-transition: top 0.5s ease-in-out;
+	-ms-transition: top 0.5s ease-in-out;
+	transition: top 0.5s ease-in-out;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+	top: 0px;
+	z-index: 10;
+}
+
+
+.sakura-titles h3{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.sakura-titles h3 span{
+	z-index: 10000;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	opacity: 0;
+}
+.sakura-titles h3 span:nth-child(1){
+	top: 15%;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 70px;
+	letter-spacing: 7px;
+	-webkit-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+}
+.sakura-titles h3 span:nth-child(1){
+	top: 50%;
+	margin-top: 84px;
+	letter-spacing: 0px;
+	background: rgba(104,171,194,0.9);
+	font-size: 14px;
+	padding: 10px 0px;
+	font-style: italic;
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out;
+}
+
+
+.sakura-container input.sakura-selector-img-1:checked ~ .sakura-titles h3:nth-child(1) span:nth-child(1),
+.sakura-container input.sakura-selector-img-2:checked ~ .sakura-titles h3:nth-child(2) span:nth-child(1),
+.sakura-container input.sakura-selector-img-3:checked ~ .sakura-titles h3:nth-child(3) span:nth-child(1),
+.sakura-container input.sakura-selector-img-4:checked ~ .sakura-titles h3:nth-child(4) span:nth-child(1){
+	opacity: 1;
+	top: 50%;
+}
+.sakura-container input.sakura-selector-img-1:checked ~ .sakura-titles h3:nth-child(1) span:nth-child(2),
+.sakura-container input.sakura-selector-img-2:checked ~ .sakura-titles h3:nth-child(2) span:nth-child(2),
+.sakura-container input.sakura-selector-img-3:checked ~ .sakura-titles h3:nth-child(3) span:nth-child(2),
+.sakura-container input.sakura-selector-img-4:checked ~ .sakura-titles h3:nth-child(4) span:nth-child(2){
+	opacity: 1;
+}
+/* Media Query: Let's show the inputs on mobile sized browsers because they probably don't support the label trick: */
+@media screen and (max-width: 768px) {
+	.sakura-container input{
+		display: inline;
+		width: 24%;
+		margin-top: 350px;
+		z-index: 1000;
+		position: relative;
+	}
+	.sakura-container label{
+		display: none;
+	}
+}
