@@ -880,11 +880,6 @@ a.idol_btn3 h3{
 	z-index: 1;
 }
 
-
-
-
-
-
 .card4{
     margin-left: -3px;
     right:-47%;
@@ -893,10 +888,9 @@ a.idol_btn3 h3{
     height: 92px;
     opacity: 0.8;
     position: relative;
-    margin-top:200px;
+    margin-top: 37.5%;
     background-color: #FF5192;
 }
-
 
 .card4:after{
 	content: '';
@@ -913,7 +907,7 @@ a.idol_btn3 h3{
 
 
 .card5{
-    margin-top: 62px;
+    margin-top: -2.5%;
     margin-left: 0px;
     height: 47%;
 	width:5%;
@@ -947,18 +941,15 @@ a.idol_btn3 h3{
 
 
 .card5 img{
-    margin-left: 63px;
-    margin-top: 210px;
+    margin-left: 202%;
+    margin-top: 1026%;
 }
 
-
-
-
+/*  IZONE　右の棒 */
 .card6{
     height: 47%;
 	width:5%;
 	left:77%;
-	top:1em;
 	padding:2em;
 	background:#FF77FF;
 	text-align:center;
@@ -985,8 +976,6 @@ a.idol_btn3 h3{
     border-right: 47px solid #FF77FF;
     border-bottom: 30px solid transparent;
 }
-
-
 
 
 h4{
