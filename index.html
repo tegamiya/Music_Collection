@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>My Music</title>
+
+        <link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/content.css" rel="stylesheet" type="text/css" />
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    </head>
+<body>
+
+<div class="title">Music <br>Collection
+</div>
+
+<div class="tyoseiA"></div>
+
+
+
+<!--　消えるトップページ-->
+<div>
+  <svg id="elemnt" viewBox="0 0 960 368" style="background-color:#ffffff;width: 1920px; height: 736px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960px" height="368px">
+    <defs>
+        <mask id="masking" maskUnits="objectBoundingBox">
+        <path d="M-62.12 96.97C21.545-2.364 301.666-114.667 140 7.333c-161.667 122-309.697 403.273-116.667 208C131.47 105.94 355.333-149.333 245 20S-155.304 487.18 38 332.667C234 176 458.667-194 356 25 253.333 244-173.553 600.852 100.667 388.667 360 188 468.667-109.333 448 14 427.333 137.333-1.333 597.333 234 380 469.333 162.667 576-136 526 18S182 558.667 336 386C490 213.333 646.667-160.667 599 11c-47.667 171.667-271.333 494-179 387C512.333 291 717.333-142 663 9c-54.333 151-263 561-151 379S754-128.667 723 12c-31 140.667-226.333 482-132 371S812.667-160.667 783 12c-29.667 172.667-193 479.333-123 366C730 264.667 870.667-142 831 8S674 501.667 722.667 420.667c48.666-81 208.666-666 185.333-408.667S704.394 593.788 806.06 428.788C907.728 263.788 989.334-176.667 947 66c-42.333 242.667-84.698 474.253-48.333 382.667 40.91-103.03 122.545-291.09 122.545-291.09" stroke="#fff" stroke-width="80" fill="none"/>
+        </mask>
+    </defs>
+    <g mask="url(#masking)" fill="#ffffff">
+        <image width="100%" height="100%" xlink:href="img/Bmxj8W.jpg" />
+    </g>
+  </svg>
+</div>
+
+
+<!--    背景制御 0pxで消去、deta-???pxで出現-->
+<div data-4700="display: block;" id="bg1" data-0="background-position:0px 0px; display: none;" data-7300="display: none;" ></div>
+<div data-7300="display: block;" id="bg2" data-0="background-position:0px 0px;display: none;" data-end="background-position:-500px -8000px;" ></div>
+<div data-7300="display: block;" id="bg3" data-0="background-position:0px 0px;display: none;" data-end="background-position:-500px -6000px;"></div>
+
+<!--横にのびるプログレスバー-->
+<div id="progress" data-0="width:0%;background:hsla(120, 100%, 60%, 0.3);" data-end="width:100%;background:hsla(180, 100%, 50%, 0.7);"></div>
+
+
+<!--タイトル-->
+<div id="intro" data-0="opacity:0.8;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-600="opacity:0;top:-10%;transform:rotate(0deg);" >
+	<a href="#jazz"><p>JAZZ ROCK</p></a>
+</div>
+
+<div id="intro2" data-0="opacity:0.8;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-600="opacity:0;top:-10%;transform:rotate(0deg);">
+	<a href="#rap"><p>RAP</p></a>
+</div>
+
+<div id="intro3" data-0="opacity:0.8;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-600="opacity:0;top:-10%;transform:rotate(0deg);">
+	<a href="#idol"><p>IDOL</p></a>
+</div>
+
+<!--   JAZZ -->
+<main>
+	<h1 id="jazz">
+      <font color="#CC0033">j</font>azz rock
+    </h1>
+    <h5>
+    ジャズ・ロック(jazz rock)とは、音楽のジャンルにおいて、ジャズおよびロックより発展した一つの演奏スタイルである。欧米ではJazz fusionと呼ばれることもある。
+    </h5>
+    <h5>
+    1960年代に、アート・ロックやブラス・ロックなどの楽器演奏を中心としたロックミュージックが台頭した。それらの影響を受け、ジャズにおいても電気楽器の使用によるロック風な奏法を取り入れ、新しい演奏スタイルが生まれた。ロックにおいてもより即興演奏を中心とするスタイルに発展した。これをジャズ・ロックと分類した。
+    <br>
+    </h5>
+    <div id="try4th">
+        <h2><font color="#CC0033">退</font>屈させないJazz</h2>
+        <h5>
+        日本でのおすすめジャズロックバンドを一つ挙げるなら<br>
+        5人組ジャズバンドのTRI4TH（トライフォース）<br>
+        Jazzの賑やかさとロックバンドの疾走感が魅力
+        </h5>
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/WKQRB0eFbwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+</main>
+
+<!--  斜めに切り裂く -->
+<div class="diagonal-bg" >
+	<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='100%' y1='0' x2='1' y2='100%' stroke='#fff' stroke-width='0%'/></svg>
+</div>
+
+<!-- 水-->
+<div class="stage1">
+    <img src="img/kos.jpg" width="800px" height="500px" float="right" >
+</div>
+<div class="hoge"></div>
+
+<div id="tyouseiB">
+    <h2>おすすめJazzバンド3選</h2>
+</div>
+
+<!--おすすめJAZZバンド-->
+<div id="boxxxx">
+    <a href="https://www.youtube.com/watch?v=17Uh1K2eAr0&index=235&list=LLSUb--xags5BtSrg6cFmNyA&t=0s" class="cp_btn" id="btn1" target="_blank">カルメラ</a>
+    <a href="https://www.youtube.com/watch?v=1m53lVsc2As" class="cp_btn1" id="btn2" target="_blank">H ZETTRIO</a>
+    <a href="https://www.youtube.com/watch?v=gjDrEdEzfQc" class="cp_btn2" id="btn3" target="_blank">bohemianvoodoo</a>
+
+
+    <!-- JAZZパネル -->
+    <ul class="details">
+        <li class="type1">
+            <img src="img/733a73c0.jpg" width="500" height="300">
+            <dl>
+            <dt>楽曲から様々な風景がイメージされる、メロディアス・インストバンド</dt>
+            <dd><iframe width="500" height="260" src="https://www.youtube.com/embed/gjDrEdEzfQc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></dd>
+            </dl>
+        </li>
+
+        <li class="type2">
+            <img src="img/H_z.jpg" width="500" height="300">
+            <dl>
+            <dt>「大人も子どもも“笑って踊れる”」をテーマに掲げるピアノトリオ・バンド</dt>
+            <dd><iframe width="500" height="260" src="https://www.youtube.com/embed/1m53lVsc2As" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></dd>
+            </dl>
+        </li>
+
+        <li class="type3">
+            <img src="img/0228c4.jpg" width="500" height="300">
+            <dl>
+            <dt>日本の7人組大阪発 インストゥルメンタル・エンタメジャズバンド</dt>
+            <dd><iframe width="500" height="260" src="https://www.youtube.com/embed/GxcIs_YmQng" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></dd>
+            </dl>
+        </li>
+    </ul>
+
+    <!-- 改行 -->
+    <br><br>
+
+    <ul class="details">
+        <li class="type1">
+            <img src="img/baea42c1.jpg" width="500" height="300">
+            <dl>
+            <dt>楽曲から様々な風景がイメージされる、メロディアス・インストバンド</dt>
+            <dd><iframe width="500" height="260" src="https://www.youtube.com/embed/-oWccnrIqKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+            </dl>
+        </li>
+
+        <li class="type2">
+            <img src="img/Ocd8R2JFi1ZWOkbcGfsXLZOK8eXtiEpTso6OZkH9B7w5bTu2TEWDUAs1iimKtwMw.jpg" width="500" height="300">
+            <dl>
+            <dt>「大人も子どもも“笑って踊れる”」をテーマに掲げるピアノトリオ・バンド</dt>
+            <dd><iframe width="500" height="260" src="https://www.youtube.com/embed/SHdR7skLg6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+            </dl>
+        </li>
+
+        <li class="type3">
+            <img src="img/9cbc5f45a0757a7adfeb4aa40bdd9e40.jpg" width="500" height="300">
+            <dl>
+            <dt>日本の7人組大阪発 インストゥルメンタル・エンタメジャズバンド</dt>
+            <dd><iframe width="500" height="260" src="https://www.youtube.com/embed/f_Rh224r2_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<!--    RAP -->
+<div>
+    <div class="box_text" id="rap">RAP</div>
+    <div data-2200="right:100%; top:30%; opacity:1;" data-2300="right:45%;" data-2900="opacity:0;"><div class="box_text2">RAP</div></div>
+    <div data-2200="right:100%; top:30%; opacity:1;" data-2300="right:40%;" data-2900="opacity:0;"><div class="box_text3">RAP</div></div>
+    <div data-2200="right:100%; top:30%; opacity:1;" data-2300="right:24%;" data-2900="opacity:0;"><div class="box_text4">RAP</div></div>
+    <div data-2200="right:100%; top:30%; opacity:1;" data-2300="right:18%;" data-2900="opacity:0;"><div class="box_text5">RAP</div></div>
+    <canvas width="100%" height="500" id="seen-canvas"></canvas>
+</div>
+
+<!--      ※※※※右側音楽サイコロ※※※※-->
+<div class="container" id="saikoro1">
+    <div class="stage" style="width: 400px; height: 400px;">
+        <div class="cubespinner">
+            <a href="https://www.youtube.com/watch?v=GlEl4Ega84M" target="_blank"><div class="face1"><img src="img/sin.jpg" height="400" width="400"></div></a>
+
+            <a href="https://www.youtube.com/watch?v=9hJLzzmbQAY&t=0s&list=LLSUb--xags5BtSrg6cFmNyA&index=242" target="_blank"><div class="face2"><img src="img/dain.jpg" height="400" width="400"></div></a>
+
+            <a href="https://www.youtube.com/watch?v=SvAbsrS8jDY&t=0s&list=LLSUb--xags5BtSrg6cFmNyA&index=222" target="_blank"><div class="face3"><img src="img/hqdefault.jpg" height="400" width="400"></div></a>
+
+            <a href="https://www.youtube.com/watch?v=PKdIOO0_jXE&t=0s&list=LLSUb--xags5BtSrg6cFmNyA&index=213" target="_blank"><div class="face4"><img src="img/tokona.jpg" height="400" width="400"></div></a>
+
+            <div class="face5">Recommended<br>Lap<br>5 Selection</div>
+
+            <a href="https://www.youtube.com/watch?v=fzn9rtttpGY&index=98&list=LLSUb--xags5BtSrg6cFmNyA&t=0s" target="_blank"><div class="face6"><img src="img/sp16.jpg" height="400" width="400"></div></a>
+        </div>
+    </div>
+</div>
+
+<!--     横からカードが出る 大１枚目-->
+<div id="title1">
+    <h2>Recommended　Lap 5 Selection</h2>
+</div>
+
+<div data-2800="right:100%; top:30%; opacity:1;" data-2900="right:45%;" data-3700="opacity:0;">
+    <div id="yoko"></div>
+    <div id="yoko_2"></div>
+    <div id="tate"></div>
+    <div id="tate_2"></div>
+</div>
+
+
+<div id="card-text">
+    <br><br><br><br><br>
+    <h3><a href="https://www.youtube.com/watch?v=GlEl4Ega84M" target="_blank">　Devil's tongue　</a></h3>
+        チプルソ,PONY,DDS,晋平太
+    <h3><a href="https://www.youtube.com/watch?v=9hJLzzmbQAY&t=0s&list=LLSUb--xags5BtSrg6cFmNyA&index=242" target="_blank">　一網打尽 (REMIX)　</a></h3>
+          　"Feat. NORIKIYO,SHINGO★西成, 漢" 韻踏合組合
+    <h3><a href="https://www.youtube.com/watch?v=SvAbsrS8jDY&t=0s&list=LLSUb--xags5BtSrg6cFmNyA&index=222" target="_blank">　Neva Enuff　</a></h3>
+        ZEEBRA + AKTION
+    <h3><a href="https://www.youtube.com/watch?v=PKdIOO0_jXE&t=0s&list=LLSUb--xags5BtSrg6cFmNyA&index=213" target="_blank">　知らざあ言って聞かせやSHOW　</a></h3>
+        TOKONA-X
+    <h3><a href="https://www.youtube.com/watch?v=fzn9rtttpGY&index=98&list=LLSUb--xags5BtSrg6cFmNyA&t=0s" target="_blank">　TORAIZ SP-16　</a></h3> 
+        feat. hokuto＆裂固＆T-TANGG＆<br>
+        Raw Keef as K-five＆CIMA＆GADORO
+</div>
+
+<!--         ※※※※左側　音楽サイコロ※※※※-->
+<div class="container" id="saikoro2">
+    <div class="stage" style="width: 250px; height: 250px;">
+        <div class="cubespinner">
+            <a href="https://www.youtube.com/watch?v=HPRYPiPpsDI" target="_blank"><div class="face1"><img src="img/mu-ton.jpg" height="400" width="400"></div></a>
+
+            <a href="https://www.youtube.com/watch?v=owDBmjWQRgg" target="_blank"><div class="face2"><img src="img/onod.jpg" height="400" width="400"></div></a>
+
+            <a href="https://www.youtube.com/watch?v=c-qAeeMqF2U" target="_blank"><div class="face3"><img src="img/tinza.jpg" height="400" width="400"></div></a>
+
+            <a href="https://www.youtube.com/watch?v=Zp952mh8fXI" target="_blank"><div class="face4"><img src="img/R.jpg" height="400" width="400"></div></a>
+
+            <div class="face5">Recommended<br>Rapper<br>5 Selection</div>
+
+            <a href="https://www.youtube.com/watch?v=-1CRvnAesy0&list=LLSUb--xags5BtSrg6cFmNyA&t=0s&index=33" target="_blank"><div class="face6"><img src="img/yuuma.jpg" height="400" width="400"></div></a>
+        </div>
+    </div>
+</div>
+
+
+<!--     横からカードが出る　大２枚目-->
+<div id="title2">
+    <h2>Recommended　Rapper 5 Selection</h2>
+</div>
+
+
+<div data-3600="left:100%; top:30%; opacity:1;" data-3800="left:50%;" data-4300="opacity:0;">
+    <div class="card2">
+     </div>
+</div>
+
+<div id="card-text2">
+        <br><br>
+        <h3><a href="https://www.youtube.com/watch?v=HPRYPiPpsDI" target="_blank">　mu-ton（ムートン）　</a></h3>
+        　最注目のラッパー。卑怯なくらいの声のかっこよさとフローの心地良さに定評がある。<br>
+        　韻や言葉を意味よりもリズム感を重視して言葉を紡ぐ。
+
+        <h3><a href="https://www.youtube.com/watch?v=owDBmjWQRgg" target="_blank">　ONO-D（オノディー）　</a></h3>
+        　聞き取りやすいフロー、リズム感、独特な動き、韻のうまさ。<br>
+        　一度聞けば力が分かる00年代筆頭の新星ラッパー。
+
+        <h3><a href="https://www.youtube.com/watch?v=c-qAeeMqF2U" target="_blank">　鎮座DOPENESS　</a></h3>
+        　誰もが認める独特かつ天才的なフロウ。別名はHipHop界の珍獣。<br>
+        　この人を知ってからラップバトルに興味を持ち始めた人も多い。
+
+        <h3><a href="https://www.youtube.com/watch?v=Zp952mh8fXI" target="_blank">　R指定　</a></h3>
+        　ラップバトル最強。芸術的な韻の踏み方とリズム、聞き取りやすさもよい。死角なし。
+
+        <h3><a href="https://www.youtube.com/watch?v=-1CRvnAesy0&list=LLSUb--xags5BtSrg6cFmNyA&t=0s&index=33" target="_blank">　ゆうま　</a></h3> 
+        　対戦相手が呆れるレベルの下ネタラップで有名。 唯一無二の誰も真似したくないスタイル。
+        <br><br><br>
+</div>
+
+<!-- 幅の調整-->
+<div class="boxxx"></div>
+
+<!-- 上下左右からカード-->
+
+<div class="card5"  data-4100="top:-100%;" data-4900="opacity:1;top:10%;transform:rotate(0deg);transform-origin:0 0;" data-5400="opacity:1;" data-5500="opacity:0;transform:rotate(0deg);">
+<img src="img/produce-48-cj.jpg" width="190" height="93">
+		<p></p>
+</div>
+
+<div class="card6"  data-0="top:1000%;" data-4900="opacity:1;top:32%;transform:rotate(0deg);transform-origin:0 0;" data-5400="opacity:1;" data-5500="opacity:0;transform:rotate(0deg);">
+		<p></p>
+</div>
+
+<div data-4600="right:120%; top:32%; opacity:1;" data-4700="right:11%;" data-5400="opacity:1;" data-5800="opacity:0;">
+    <div class="card3">
+     </div>
+
+</div>
+
+<div data-4600="right:110%; top:30%; opacity:1;" data-4700="right:13%;" data-5400="opacity:1;" data-5800="opacity:0;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t-t5G1v563k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="card3-mv"></iframe>
+</div>
+
+<div data-4600="left:100%; top:30%; opacity:1;" data-4800="left:34%;" data-5400="opacity:1;" data-5800="opacity:0;">
+    <div class="card4">
+    </div>
+</div>
+
+<div data-4600="left:100%; top:30%; opacity:1;" data-4800="left:21%;" data-5400="opacity:1;" data-5800="opacity:0;">
+    <iframe width="552" height="315" src="https://www.youtube.com/embed/UOmolLOQ7Rs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="card4-mv"></iframe>
+</div>
+
+<!--    IDOL   -->
+<div id="idol">
+    <img src="img/idol_pro48.png" width="300" height="250">
+</div>
+
+<div id="idol_setumei">
+    PRODUCE48はAKB48グループ協力による日韓同時放送<br>
+      の公開オーディション番組。<br>
+    日韓参加者96人のうち<font color="#FF1493">合格者12人がガールズ<br>
+    グループとしてデビュー</font>予定<br>
+    <br>
+    審査員は韓国のMnet視聴者（日本人は投票不可）である<br>
+    NAVER（韓国の一番大手の検索サイト）では番組<br>
+    <font color="#FF1493">放送後、毎回検索１位になるほどの人気番組</font><br>
+    <br>
+    レッスンは過酷であり、24時間撮影され厳しい規約がある<br>
+    2,3時間睡眠だけで延々とレッスン及び審査がある<br>
+    容赦ない指導もあり、心身共に過酷なオーディション<br>
+</div>
+
+<div id="idol_waku">
+    <img src="img/waku1.png" width="730" height="600">
+</div>
+
+
+<div data-4700="top:300%;" data-5000="opacity:0.8;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-5400="opacity:0;top:-10%;transform:rotate(0deg);" >
+    <img src="img/aka-husen.png" width="150" height="350" id="F-red">
+</div>
+
+<div data-4900="top:300%;" data-5400="opacity:0.8;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-5700="opacity:0;top:10%;transform:rotate(0deg);" >
+    <img src="img/kiiro-husen.png" width="300" height="450" id="F-yellow">
+</div>
+
+<div data-4750="top:300%;" data-5200="opacity:0.8;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-5400="opacity:0;top:0%;transform:rotate(0deg);" >
+    <img src="img/midori-husen.png" width="150" height="350" id="F-green">
+</div>
+
+<div data-5100="top:300%;" data-5400="opacity:0.8;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-5800="opacity:0;top:0%;transform:rotate(0deg);" >
+    <img src="img/perple-husen.png" width="150" height="350" id="F-perple">
+</div>
+
+<!-- IDOL動画 -->
+<div class="tyoseiC"></div>
+
+<!--    レッスン-->
+<a href="#" class="idol_btn"><h3>レッスン風景</h3></a>
+<div id="douga1">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dovg3GMwHcE?start=83" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div id="douga1_img">
+    <img src="img/hana_waku1.png" width="700" height="600">
+    <p><br><br><br>
+        【歌唱メンバー】<br>
+        カン・ダミン　/ キム・ナヨン<br>
+        ユン・ウンビン / 矢吹奈子<br>
+        栗原紗英 / 荒巻美咲<br><br>
+        トレーナーからはみんなかなりきつく<br>
+        ダメ出しを受ける。レッスンは<br>
+        早朝から深夜5時まで続くこともある<br><br>
+        リーダーで明るく振る舞ってるのは<br>
+        キム・ナヨン。愛してるよが口癖らしい<br>
+        <br>
+    </p>
+</div>
+
+<!--    耳をすませば-->
+<a href="#" class="idol_btn2"><h3>LOVE WHISPER</h3></a>
+<div id="douga2">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t-t5G1v563k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div id="douga2_img">
+    <img src="img/hana_waku2.png" width="700" height="600">
+    <p><br>
+    番組で最初のグループバトル評価のステージ<br>
+    GFRIENDの「耳をすませば(Love Whisper)」<br>
+    この曲を音を外さずに正確に発声するには<br>
+    高度な技が必要<br><br>
+    矢吹奈子が見事に歌い切った場面では、<br>
+    会場全体が称賛の喝采につつまれた<br><br>
+    別の見どころとして1:24で先生たちが<br>
+    「(荒巻)美咲が笑った!」「美咲可愛い」<br>
+    と騒いでいるところ<br>
+    </p>
+</div>
+
+<!--　　　採点-->
+<a href="#" class="idol_btn3"><h3>採点結果</h3></a>
+<div id="douga3">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dE1bKYoDGJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div id="douga3_img">
+    <img src="img/hana_waku3.png" width="700" height="600">
+    <p><br>
+    投票の結果、矢吹奈子が330票を獲得し<br>
+    チームの勝利に大きく貢献した。<br>
+    <br>
+    「PRODUCE」シリーズ史上の最高得票。<br>
+    過去の最高スコアはシーズン1では204票、<br>
+    シーズン2では264票でした。<br>
+    また、Fクラス → Aクラスの大幅上昇も、<br>
+    シリーズ史上初<br>
+    <br>
+    日韓両国最大のポータルサイトである<br>
+    NAVERとYahoo！JAPANで同時に<br>
+    リアルタイム検索ワードで1位を記録
+    </p>
+</div>
+
+<!--　調整-->
+<div class="tyoseiC"></div>
+<div class="tyoseiC"></div>
+<div class="tyoseiC"></div>
+<div id="title4"><h1>Favorite Member</h1></div>
+<div class="tyoseiD"></div>
+
+<!-- 　　スライド 美咲   -->
+<div class="misaki"><h2>荒巻 美咲</h2><img src="img/sen.png"></div>
+
+<div class="container">
+	<section class="cr-container">
+
+		<input id="select-img-1" name="radio-set-1" type="radio" class="cr-selector-img-1" checked/>
+		<label for="select-img-1" class="cr-label-img-1">1</label>
+		<input id="select-img-2" name="radio-set-1" type="radio" class="cr-selector-img-2" />
+		<label for="select-img-2" class="cr-label-img-2">2</label>
+		<input id="select-img-3" name="radio-set-1" type="radio" class="cr-selector-img-3" />
+		<label for="select-img-3" class="cr-label-img-3">3</label>
+		<input id="select-img-4" name="radio-set-1" type="radio" class="cr-selector-img-4" />
+		<label for="select-img-4" class="cr-label-img-4">4</label>
+
+		<div class="cr-bgimg">
+			<div>
+				<span>Slice 1 - Image 1</span>
+				<span>Slice 1 - Image 2</span>
+				<span>Slice 1 - Image 3</span>
+				<span>Slice 1 - Image 4</span>
+			</div>
+		    <div>
+				<span>Slice 2 - Image 1</span>
+				<span>Slice 2 - Image 2</span>
+				<span>Slice 2 - Image 3</span>
+				<span>Slice 2 - Image 4</span>
+		    </div>
+			<div>
+				<span>Slice 3 - Image 1</span>
+				<span>Slice 3 - Image 2</span>
+				<span>Slice 3 - Image 3</span>
+				<span>Slice 3 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 4 - Image 1</span>
+				<span>Slice 4 - Image 2</span>
+				<span>Slice 4 - Image 3</span>
+				<span>Slice 4 - Image 4</span>
+			</div>
+		</div>
+		<div class="cr-titles">
+			<h3>
+            <span>What you've been dreaming of</span></h3>
+			<h3><span>Where the fun begins</span></h3>
+			<h3><span>Unforgettable eperiences</span></h3>
+			<h3><span>When silence touches nature</span></h3>
+        </div>
+	</section>
+</div>
+
+<div id="misaki">
+    <img src="img/waku3.png" width="600" height="600">
+    <p>
+        生年月日   :2001年1月28日 （17歳）<br>
+        身長       :160.5cm<br>
+        <br>
+        可愛い外見とユニークな内面が魅力<br>
+        あまり感情を表に出さない性格で笑顔が貴重<br>
+        <br>
+        オーディショングループ曲「耳をすませば」で<br>
+        笑顔を見せたとき、かなり厳しい審査員から<br>
+        「美咲が笑った！」「美咲かわいい」と言われ<br>
+        クララが立った！的な反応が話題となった<br>
+        <br>
+        PRODUCE48の初順位発表式で56位になり<br>
+        生き残って笑顔を見せた<br>
+        <br>
+    </p>
+
+    <a href="https://twitter.com/mirunrun_0128" class="fl_tw" target="_blank">
+    <span class="twicon"><i class="fab fa-twitter"></i></span>@mirunrun_0128
+    </a>
+
+    <a href="https://www.instagram.com/mirun.jellyfish.0128/?hl=ja" class="insta_btn" target="_blank">
+        <span class="insta">
+            <i class="fab fa-instagram"></i>
+        </span>
+        @mirun.jellyfish.0128
+    </a>
+</div>
+
+<!--     スライド  紗英-->
+<div class="tyoseiC"></div>
+<div class="sae"><h2>栗原 紗英</h2><img src="img/sen2.png"></div>
+
+<div class="container">
+	<section class="sae-container">
+
+		<input id="sae_select-img-1" name="radio-sae-1" type="radio" class="sae-selector-img-1" checked/>
+		<label for="sae_select-img-1" class="sae-label-img-1">1</label>
+		<input id="sae_select-img-2" name="radio-sae-1" type="radio" class="sae-selector-img-2" />
+		<label for="sae_select-img-2" class="sae-label-img-2">2</label>
+		<input id="sae_select-img-3" name="radio-sae-1" type="radio" class="sae-selector-img-3" />
+		<label for="sae_select-img-3" class="sae-label-img-3">3</label>
+		<input id="sae_select-img-4" name="radio-sae-1" type="radio" class="sae-selector-img-4" />
+		<label for="sae_select-img-4" class="sae-label-img-4">4</label>
+
+		<div class="sae-bgimg">
+			<div>
+				<span>Slice 1 - Image 1</span>
+				<span>Slice 1 - Image 2</span>
+				<span>Slice 1 - Image 3</span>
+				<span>Slice 1 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 2 - Image 1</span>
+				<span>Slice 2 - Image 2</span>
+				<span>Slice 2 - Image 3</span>
+				<span>Slice 2 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 3 - Image 1</span>
+				<span>Slice 3 - Image 2</span>
+				<span>Slice 3 - Image 3</span>
+				<span>Slice 3 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 4 - Image 1</span>
+				<span>Slice 4 - Image 2</span>
+				<span>Slice 4 - Image 3</span>
+				<span>Slice 4 - Image 4</span>
+			</div>
+        </div>
+
+		<div class="saetitles">
+			<h3><span>What you've been dreaming of</span></h3>
+			<h3><span>Where the fun begins</span></h3>
+			<h3><span>Unforgettable eperiences</span></h3>
+			<h3><span>When silence touches nature</span></h3>
+		</div>
+	</section>
+</div>
+
+<div id="sae">
+    <img src="img/waku3.png" width="600" height="600">
+    <p>
+        生年月日   :1996年6月20日（22歳）<br>
+        身長      :164cm<br>
+        総選挙順位 :96位<br>
+        <br>
+        成人してるとは思えないアホな言動と、<br>
+        過去に習っていた新体操の経験を生かした<br>
+        迫力のあるダンスのギャップが魅力<br>
+        <br>
+        かなり気を使う性格で周囲のサポートも担当<br>
+        メンバーに声を掛けて、励ましたり慰めたりして<br>
+        チームの雰囲気を明るく保つ<br>
+        <br>
+    </p>
+
+    <a href="https://twitter.com/38sae_kurihara" class="fl_tw" target="_blank">
+        <span class="twicon"><i class="fab fa-twitter"></i></span>@38sae_kurihara
+    </a>
+    <a href="https://www.instagram.com/hkt48_saekurihara/?hl=ja" class="insta_btn" target="_blank">
+        <span class="insta">
+            <i class="fab fa-instagram"></i>
+        </span>
+        @hkt48_saekurihara
+    </a>
+</div>
+
+<!--     スライド　奈子-->
+<div class="tyoseiC"></div>
+<div class="nako"><h2>矢吹 奈子</h2><img src="img/sen3.png"></div>
+
+<div class="container">
+	<section class="nako-container">
+
+		<input id="nako-select-img-1" name="radio-set-nako" type="radio" class="nako-selector-img-1" checked/>
+		<label for="nako-select-img-1" class="nako-label-img-1">1</label>
+		<input id="nako-select-img-2" name="radio-set-nako" type="radio" class="nako-selector-img-2" />
+		<label for="nako-select-img-2" class="nako-label-img-2">2</label>
+		<input id="nako-select-img-3" name="radio-set-nako" type="radio" class="nako-selector-img-3" />
+		<label for="nako-select-img-3" class="nako-label-img-3">3</label>
+		<input id="nako-select-img-4" name="radio-set-nako" type="radio" class="nako-selector-img-4" />
+        <label for="nako-select-img-4" class="nako-label-img-4">4</label>
+
+		<div class="nako-bgimg">
+			<div>
+				<span>Slice 1 - Image 1</span>
+				<span>Slice 1 - Image 2</span>
+				<span>Slice 1 - Image 3</span>
+				<span>Slice 1 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 2 - Image 1</span>
+				<span>Slice 2 - Image 2</span>
+				<span>Slice 2 - Image 3</span>
+				<span>Slice 2 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 3 - Image 1</span>
+				<span>Slice 3 - Image 2</span>
+				<span>Slice 3 - Image 3</span>
+				<span>Slice 3 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 4 - Image 1</span>
+				<span>Slice 4 - Image 2</span>
+				<span>Slice 4 - Image 3</span>
+				<span>Slice 4 - Image 4</span>
+			</div>
+        </div>
+
+		<div class="nako-titles">
+			<h3><span>What you've been dreaming of</span></h3>
+			<h3><span>Where the fun begins</span></h3>
+			<h3><span>Unforgettable eperiences</span></h3>
+			<h3><span>When silence touches nature</span></h3>
+		</div>
+	</section>
+</div>
+
+
+<div id="nako">
+    <img src="img/waku3.png" width="600" height="600">
+    <p>
+        生年月日   : 2001年6月18日 (年齢 17歳)<br>
+        身長       :150 cm<br>
+        <br>
+        HKT最新シングルのWセンターの一人<br>
+        <br>
+        produce48では最初「F評価」を得たチームに<br>
+        居たが、次回の評価では一人だけ一気にA評価へ<br>
+        <br>
+        グループバトルではメインボーカルとして歌い、<br>
+        難しい高音パートを完璧に歌った<br>
+        <br>
+        そして、番組至上最多となる330票を獲得。<br>
+        （一人で約六人分の投票結果とほぼ同じ）<br>
+        結果、韓国日本で矢吹奈子が検索ワード一位に<br>
+    </p>
+
+    <a href="https://twitter.com/nako_yabuki_75" class="fl_tw" target="_blank">
+        <span class="twicon"><i class="fab fa-twitter"></i></span>@nako_yabuki_75
+    </a>
+    <a href="https://www.instagram.com/75_yabuki/?hl=ja" class="insta_btn" target="_blank">
+        <span class="insta">
+            <i class="fab fa-instagram"></i>
+        </span>
+        @75_yabuki
+    </a>
+</div>
+
+<!--    スライド　咲良-->
+<div class="tyoseiC"></div>
+<div class="sakura"><h2>宮脇 咲良</h2><img src="img/sen4.png"></div>
+
+<div class="container">
+	<section class="sakura-container">
+
+		<input id="sakura-select-img-1" name="radio-set-sakura" type="radio" class="sakura-selector-img-1" checked/>
+		<label for="sakura-select-img-1" class="sakura-label-img-1">1</label>
+		<input id="sakura-select-img-2" name="radio-set-sakura" type="radio" class="sakura-selector-img-2" />
+		<label for="sakura-select-img-2" class="sakura-label-img-2">2</label>
+		<input id="sakura-select-img-3" name="radio-set-sakura" type="radio" class="sakura-selector-img-3" />
+		<label for="sakura-select-img-3" class="sakura-label-img-3">3</label>
+		<input id="sakura-select-img-4" name="radio-set-sakura" type="radio" class="sakura-selector-img-4" />
+		<label for="sakura-select-img-4" class="sakura-label-img-4">4</label>
+
+		<div class="sakura-bgimg">
+			<div>
+				<span>Slice 1 - Image 1</span>
+				<span>Slice 1 - Image 2</span>
+				<span>Slice 1 - Image 3</span>
+				<span>Slice 1 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 2 - Image 1</span>
+				<span>Slice 2 - Image 2</span>
+				<span>Slice 2 - Image 3</span>
+				<span>Slice 2 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 3 - Image 1</span>
+				<span>Slice 3 - Image 2</span>
+				<span>Slice 3 - Image 3</span>
+				<span>Slice 3 - Image 4</span>
+			</div>
+			<div>
+				<span>Slice 4 - Image 1</span>
+				<span>Slice 4 - Image 2</span>
+				<span>Slice 4 - Image 3</span>
+				<span>Slice 4 - Image 4</span>
+			</div>
+        </div>
+
+		<div class="sakura-titles">
+			<h3><span>What you've been dreaming of</span></h3>
+			<h3><span>Where the fun begins</span></h3>
+			<h3><span>Unforgettable eperiences</span></h3>
+			<h3><span>When silence touches nature</span></h3>
+		</div>
+	</section>
+</div>
+
+<div id="sakura">
+    <img src="img/waku3.png" width="600" height="600">
+    <p>
+        生年月日   :1998年3月19日 (年齢 20歳)<br>
+        身長       :163 cm<br>
+        <br>
+        PRODUCE48の初MVの曲내꺼야（ネッコヤ）<br>
+        のセンター<br>
+        <br>
+        ダンス、歌共にレベルが高いとは言えないが<br>
+        スター性と自己表現の工夫が評価されている<br>
+        <br>
+        ボーカルテストでは他のメンバーが自国言語で<br>
+        歌う中、一人韓国語で歌ったり、<br>
+        自由に曲の難易度を設定できるときにあえて<br>
+        最高難易度の曲を選んだりする努力の人<br>
+    </p>
+
+    <a href="https://twitter.com/39saku_chan" class="fl_tw" target="_blank">
+        <span class="twicon"><i class="fab fa-twitter"></i></span>@39saku_chan
+    </a>
+    <a href="https://www.instagram.com/39saku_chan/?hl=ja" class="insta_btn" target="_blank">
+        <span class="insta">
+            <i class="fab fa-instagram"></i>
+        </span>
+        @39saku_chan
+    </a>
+</div>
+
+<div id="download" data-9800="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(255,255,85);border-width:0px;" data-10800="top:10%;background:rgb(0,139,187);border-width:10px;">
+	<h2>THE END</h2>
+</div>
+
+<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+
+<!--
+	[if lt IE 9]>
+	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
+	<![endif]
+-->
+<script type="text/javascript" src="scripts/skrollr.min.js"></script>
+<script type="text/javascript">
+    var s = skrollr.init({
+        edgeStrategy: 'set',
+        easing: {
+            WTF: Math.random,
+            inverted: function(p) {
+                return 1-p;
+            }
+        }
+    });
+    var view = document.getElementById('code-view');
+    var code = document.getElementById('code');
+    // view.innerHTML = code.innerHTML;
+    // hljs.highlightBlock(view);
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts/jquery.ripples.js"></script>
+<script src="scripts/jquery.drawsvg.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
