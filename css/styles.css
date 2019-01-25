@@ -263,11 +263,11 @@ h4 {
 }
 
 #download {
-	width:80%;
-	left:10%;
+	width:40%;
+	left:30%;
 	height:35%;
 	padding:3em;
-    z-index: -1;
+    　　z-index: -1;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -275,7 +275,7 @@ h4 {
 }
 
 #download h2{
-    font-size: 150px;
+    font-size: 120px;
     font-weight: bold;
     text-align: center;
 }
@@ -357,9 +357,6 @@ div.box_text5 {
     text-align: center;
     border: medium solid rgb(29, 17, 197);
 }
-
-
-
 
 /*　砂文字*/
 @import url(https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:900);
