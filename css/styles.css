@@ -267,7 +267,7 @@ h4 {
 	left:30%;
 	height:35%;
 	padding:3em;
-    　　z-index: -1;
+    z-index: -1;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -357,6 +357,9 @@ div.box_text5 {
     text-align: center;
     border: medium solid rgb(29, 17, 197);
 }
+
+
+
 
 /*　砂文字*/
 @import url(https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:900);
@@ -877,6 +880,11 @@ a.idol_btn3 h3{
 	z-index: 1;
 }
 
+
+
+
+
+
 .card4{
     margin-left: -3px;
     right:-47%;
@@ -888,6 +896,7 @@ a.idol_btn3 h3{
     margin-top: 37.5%;
     background-color: #FF5192;
 }
+
 
 .card4:after{
 	content: '';
@@ -973,6 +982,8 @@ a.idol_btn3 h3{
     border-right: 47px solid #FF77FF;
     border-bottom: 30px solid transparent;
 }
+
+
 
 
 h4{
@@ -1203,12 +1214,10 @@ a{
 /*   調整*/
 
 .tyoseiA{
-    width: 1000;
-    height: 120px;
+    height: 110px;
 }
 
 .tyoseiC{
-    width: 1000;
     height: 400px;
 }
 
