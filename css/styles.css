@@ -46,11 +46,12 @@ ul dl {
 
 ul dd {
     	margin-left: 0px;
-	font-size:1px;
+	
 }
 
 ul dl dt {
-    margin-bottom: 0.3em;
+    	margin-bottom: 0.3em;
+	font-size:1px;
 }
 
 ul a {
