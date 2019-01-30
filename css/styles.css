@@ -33,7 +33,7 @@ ul li {
     	position: relative;
 	margin: 0 5px;
     	letter-spacing: 0;
-	font-size:12px;
+	
 }
 ul dl {
 	position: absolute;
@@ -46,6 +46,7 @@ ul dl {
 
 ul dd {
     	margin-left: 0px;
+	font-size:12px;
 }
 
 ul dl dt {
