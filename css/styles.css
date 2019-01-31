@@ -9,9 +9,9 @@ body{
 	background: #89d0d3;
 	color: #222;
 	font-family: "Times New Roman", serif;
-    	font-size: 16px;
-    	line-height: 1.6;
-    	-webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
 article, aside, details, figcaption, figure,
@@ -33,7 +33,7 @@ ul li {
     	position: relative;
 	margin: 0 5px;
     	letter-spacing: 0;
-	
+
 }
 ul dl {
 	position: absolute;
@@ -45,13 +45,12 @@ ul dl {
 }
 
 ul dd {
-    	margin-left: 0px;
-	
+    margin-left: 0px;
 }
 
 ul dl dt {
-    	margin-bottom: 0.3em;
-	font-size:1px;
+    margin-bottom: 0.3em;
+	font-size:10px;
 }
 
 ul a {
