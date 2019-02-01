@@ -856,6 +856,9 @@ a.idol_btn3 h3{
     border: inset 10px #33CCFF;
 }
 
+
+/*  IZONE 上のリボン */
+
 .card3{
     margin-left: 30px;
     left:24%;
@@ -881,11 +884,7 @@ a.idol_btn3 h3{
 	z-index: 1;
 }
 
-
-
-
-
-
+/*  IZONE 下のリボン */
 .card4{
     margin-left: -3px;
     right:-47%;
@@ -894,8 +893,9 @@ a.idol_btn3 h3{
     height: 92px;
     opacity: 0.8;
     position: relative;
-    margin-top: 37.5%;
+    margin-top: 35.5%;
     background-color: #FF5192;
+    /* background-color: rgb(44, 235, 37); */
 }
 
 
@@ -912,15 +912,16 @@ a.idol_btn3 h3{
 	z-index: 100;
 }
 
-
+/*   IZONE 左側　リボン */
 .card5{
-    margin-top: -2.5%;
+    margin-top: 2%;
     margin-left: 0px;
     height: 47%;
 	width:5%;
 	left:62%;
 	padding:2em;
-	background:#FF77FF;
+    /* background:rgb(31, 98, 175); */
+    background:#FF77FF;
 	text-align:center;
 
     -webkit-transform-origin:0 0;
@@ -952,13 +953,23 @@ a.idol_btn3 h3{
     margin-top: 1026%;
 }
 
-/*  IZONE　右の棒 */
+
+/*  IZONE ロゴ */
+.logo_card {
+    margin-left: 67%;
+    margin-top: 15%;
+}
+
+
+
+/*  IZONE　下から上のリボン */
 .card6{
     height: 47%;
 	width:5%;
 	left:77%;
 	padding:2em;
-	background:#FF77FF;
+    /* background:rgb(119, 162, 255); */
+    background:#FF77FF;
 	text-align:center;
 
     -webkit-transform-origin:0 0;
