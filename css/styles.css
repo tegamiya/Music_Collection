@@ -800,13 +800,12 @@ a.idol_btn3 h3{
     box-shadow: 2px 2px 4px gray;
     border: inset 5px #6633FF;
 }
-
+/*   ラッパー紹介 */
 
 #card-text{
     line-height:20px;
     font-size: 18px;
-    margin-top: 0px;
-    margin-left: 320px;
+    margin-left: 15%;
     font-family: 'Lato';
     width: 600px;
     height: 750px;
@@ -814,26 +813,33 @@ a.idol_btn3 h3{
     z-index: 110;
 
     background-image: url(../img/815549.png);
-    background-size: 600px 750px;
+    background-size: 700px 800px;
 
     color:#444444;
     font-weight: bold;
 }
 
 
-
 #card-text a{
-    color: black;
+    font-family: 'arial black';
+    background-color: rgb(201, 133, 214);
+    color: #FFF;
+    line-height:20px;
 }
+
+
+
 #card-text2 a{
-    color: black;
+    font-family: 'arial black';
+    background-color: rgb(138, 194, 226);
+    color: #FFF;
+    line-height:20px;
 }
 
 #card-text2{
     line-height:20px;
     font-size: 18px;
-    margin-top: 0px;
-    margin-left: 1000px;
+    margin-left: 50%;
     font-family: 'Lato';
     position: absolute;
     z-index: 110;
@@ -946,21 +952,6 @@ a.idol_btn3 h3{
     border-right: 47px solid #FF77FF;
     border-top: 30px solid transparent;
 }
-
-
-.card5 img{
-    margin-left: 202%;
-    margin-top: 1026%;
-}
-
-
-/*  IZONE ロゴ */
-.logo_card {
-    margin-left: 67%;
-    margin-top: 15%;
-}
-
-
 
 /*  IZONE　下から上のリボン */
 .card6{
