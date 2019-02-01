@@ -30,9 +30,9 @@ ul {
 
 ul li {
 	display: inline-block;
-    	position: relative;
+    position: relative;
 	margin: 0 5px;
-    	letter-spacing: 0;
+    letter-spacing: 0;
 
 }
 ul dl {
@@ -142,16 +142,20 @@ h4 {
 	background-image:url('../img/ame2.png');
 }
 
+#intro a, #intro2 a, #intro3 a {
+    color:rgb(94, 91, 91);
+}
+
 #intro {
 	width:25%;
 	left:65%;
 	top:1em;
-    	margin-top: 15%;
+    margin-top: 15%;
 	margin-left:-60%;
 	background:rgb(227, 237, 241);
 	text-align:center;
 
-    	-webkit-transform-origin:0 0;
+    -webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
 	-o-transform-origin:0 0;
@@ -161,13 +165,13 @@ h4 {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
-    	padding: 2px 5px;
-    	border-top: solid 5px rgb(199, 203, 206);
-    	border-left: solid 5px rgb(199, 203, 206);
-    	border-right: solid 5px rgb(199, 203, 206);
-    	border-bottom: solid 5px rgb(199, 203, 206);
+    padding: 2px 5px;
+    border-top: solid 5px rgb(199, 203, 206);
+    border-left: solid 5px rgb(199, 203, 206);
+    border-right: solid 5px rgb(199, 203, 206);
+    border-bottom: solid 5px rgb(199, 203, 206);
 
-    	font-size: 25px;
+    font-size: 25px;
 }
 
 #intro2 {
@@ -178,7 +182,7 @@ h4 {
 	background:rgb(227, 237, 241);
 	text-align:center;
 
-    	-webkit-transform-origin:0 0;
+    -webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
 	-o-transform-origin:0 0;
@@ -188,13 +192,13 @@ h4 {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
-    	padding: 2px 5px;
-    	border-top: solid 5px rgb(199, 203, 206);
-    	border-left: solid 5px rgb(199, 203, 206);
-    	border-right: solid 5px rgb(199, 203, 206);
-    	border-bottom: solid 5px rgb(199, 203, 206);
+    padding: 2px 5px;
+    border-top: solid 5px rgb(199, 203, 206);
+    border-left: solid 5px rgb(199, 203, 206);
+    border-right: solid 5px rgb(199, 203, 206);
+    border-bottom: solid 5px rgb(199, 203, 206);
 
-    	font-size: 25px;
+    font-size: 25px;
 }
 
 #intro3 {
@@ -205,7 +209,7 @@ h4 {
 	background:rgb(227, 237, 241);
 	text-align:center;
 
-    	-webkit-transform-origin:0 0;
+    -webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
 	-o-transform-origin:0 0;
@@ -216,12 +220,12 @@ h4 {
 	box-sizing: border-box;
 
 	padding: 2px 5px;
-    	border-top: solid 5px rgb(199, 203, 206);
+    border-top: solid 5px rgb(199, 203, 206);
    	border-left: solid 5px rgb(199, 203, 206);
-    	border-right: solid 5px rgb(199, 203, 206);
-    	border-bottom: solid 5px rgb(199, 203, 206);
+    border-right: solid 5px rgb(199, 203, 206);
+    border-bottom: solid 5px rgb(199, 203, 206);
 
-    	font-size: 25px;
+    font-size: 25px;
 }
 
 
@@ -268,7 +272,7 @@ h4 {
 	left:30%;
 	height:35%;
 	padding:3em;
-    	z-index: -1;
+    z-index: -1;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -728,19 +732,22 @@ a.idol_btn3 h3{
     margin-top: -250px;
     text-align: center;
     box-shadow: 7px 7px 7px 7px rgba(0,0,0,0.4);
+    opacity: 0.7;
 }
 
 #title1 h2{
     font-size: 40px;
     color: #FFF;
+    
 }
 
 #title2{
     margin-top:500px;
     width: 1900px;
     height: 70px;
-    background-color:dodgerblue;
+    background-color:rgb(138, 194, 226);
     text-align: center;
+    opacity: 0.8;
 
     box-shadow: 7px 7px 7px 7px rgba(0,0,0,0.4);
 }
