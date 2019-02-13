@@ -1,8 +1,8 @@
 # Music_Collection
 
 ## 概要  
-専門学校で自作WEBサイトの課題があったため、パララックスデザインのサイトを作った  
-自分が好きな音楽をまとめてみたもの  
+自作WEBサイトの課題 パララックスデザインのサイトを作成  
+自分が好きな音楽のまとめ  
 
 ## 公開ページ
 https://tegamiya.github.io/Music_Collection/
